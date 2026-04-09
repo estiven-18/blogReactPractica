@@ -1,0 +1,34 @@
+### Obtener todos los articulos
+GET http://localhost:3000/articulos
+
+
+### Obtener articulo por ID
+GET http://localhost:3000/articulos/1
+
+
+### Crear un articulo
+POST http://localhost:3000/articulos
+Content-Type: application/json
+
+{
+  "titulo": "Mi primer articulo",
+  "contenido": "Este es el contenido inicial del articulo",
+  "fecha": "2026-04-08",
+  "imagen": "https://picsum.photos/600/400"
+}
+
+
+### Actualizar un articulo
+PUT http://localhost:3000/articulos/1
+Content-Type: application/json
+
+{
+  "titulo": "Articulo actualizado",
+  "contenido": "Contenido actualizado para pruebas",
+  "fecha": "2026-04-09",
+  "imagen": "https://picsum.photos/640/400"
+}
+
+
+### Eliminar un articulo
+DELETE http://localhost:3000/articulos/1
