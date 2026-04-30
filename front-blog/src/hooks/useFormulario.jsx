@@ -19,7 +19,7 @@ const useFormulario = (objetoDatos = {}) => {
       }
      
       try {
-        const peticion = await fetch("http://localhost:3000/articulos", {
+        const peticion = await fetch("https://blogreactpractica.onrender.com/articulos", {
           method: "POST",
           headers: {
             "Content-Type": "application/json",

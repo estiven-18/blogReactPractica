@@ -8,7 +8,7 @@ const Articulos = () => {
   }, []);
 
   async function consumirApi() {
-    const url = "http://localhost:3000/articulos";
+    const url = "https://blogreactpractica.onrender.com/articulos";
     const peticion = await fetch(url, { method: "GET" });
     const datos = await peticion.json();
 
