@@ -10,22 +10,24 @@ const Rutas = () => {
   return (
     <>
       <BrowserRouter>
-        <div className="flex flex-col" style={{ minHeight: "100vh" }}>
+        <div className="flex flex-col min-h-screen bg-white">
           <Header />
           <Nav />
+          
           <div className="flex flex-1">
-            <article className="flex-1 overflow-y-auto pr-2">
+            <section className="flex-1">
               <Routes>
                 <Route path="/" element={<Articulos />}> </Route>
                 <Route path="/articulos" element={<Articulos />}> </Route>
                 <Route path="/crear-articulo" element={<CrearArticulo />}> </Route>
               </Routes>
-            </article>
+            </section>
 
-            <aside className="w-64 shrink-0">
+            <aside className="w-64 shrink-0 pl-4">
               <SideBar />
             </aside>
           </div>
+          
           <Footer />
         </div>
       </BrowserRouter>

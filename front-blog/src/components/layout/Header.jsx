@@ -1,7 +1,9 @@
 const Header = () => {
-    return ( <div className="flex justify-center bg-gray-300 py-6 mb-1 shadow-2cs">
-        <p className="text-3xl text-shadow-2xl">localHost</p>
-    </div> );
+    return ( 
+        <header className="flex justify-center bg-white py-6">
+            <h1 className="text-[52px] font-bold leading-[1.23] text-black">Localhost FC</h1>
+        </header> 
+    );
 }
  
 export default Header;
