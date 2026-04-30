@@ -2,7 +2,7 @@ import { NavLink } from "react-router-dom";
 
 const Nav = () => {
   return (
-    <nav className="flex bg-gray-200 h-auto p-2 text-gray-600 justify-evenly mb-1">
+    <nav className="sticky top-0 z-50 flex bg-gray-200 h-auto p-2 text-gray-600 justify-evenly mb-1">
       <ul className="flex gap-12">
         <li>
           <NavLink to="/">Inicio</NavLink>

@@ -8,8 +8,8 @@ const buildArticuloData = (body) => ({
 });
 
 const validarArticulo = (data) => {
-  if (!data.titulo || !data.contenido || !data.fecha || !data.imagen) {
-    throw new Error("Todos los campos son obligatorios: titulo, contenido, fecha e imagen");
+  if (!data.titulo || !data.contenido || !data.imagen) {
+    throw new Error("Todos los campos son obligatorios: titulo, contenido e imagen");
   }
 };
 
